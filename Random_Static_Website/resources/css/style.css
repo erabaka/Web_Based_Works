@@ -1,0 +1,440 @@
+/*Vendor*/
+.col {
+    display: block;
+    float:left;
+    margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+
+
+/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+    .col { 
+        margin: 1% 0 1% 0%;
+    }
+}
+
+.span_4_of_4 {
+    width: 100%; 
+}
+
+.span_3_of_4 {
+    width: 74.6%; 
+}
+
+.span_2_of_4 {
+    width: 49.2%; 
+}
+
+.span_1_of_4 {
+    width: 23.8%; 
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+    .span_4_of_4 {
+        width: 100%; 
+    }
+    .span_3_of_4 {
+        width: 100%; 
+    }
+    .span_2_of_4 {
+        width: 100%; 
+    }
+    .span_1_of_4 {
+        width: 100%; 
+    }
+}
+/*........................................................................................*/
+/*........................................................................................*/
+/*........................................................................................*/
+
+/*...............Base Setup.....................*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Titillium Web', sans-serif;
+    text-rendering: optimizeLegibility;
+    line-height: 1.3rem;
+    background: rgba(230, 228, 223, 0.2);
+}
+
+ul li {
+    list-style-type: none;
+}
+a{
+    text-decoration: 
+}
+/*Headings*/
+h1{
+    font-size: 4.2rem;
+    color: #fff;
+}
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both; /*if there is any float it clears. in section all is left floated*/
+    height: 0;
+    visibility: hidden;
+}
+/*...............Reusable Component.....................*/
+
+.row{
+    max-width: 114rem;
+    margin: 0 auto;
+}
+.btn:link,
+.btn:visited,
+.btn{
+    background: #333;
+    border-bottom: .3rem solid #000;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.2rem 5.5rem;
+    border-radius: .4rem;
+    display: inline-block;
+    margin-top: 4.5rem;
+}
+section{
+    padding: 8rem 0;
+}
+h2{
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: #4d574c;
+}
+h2::after{
+    content: "";
+    display: block;
+    height: .4rem;
+    background: #fff;
+    width: 8.6rem;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+h3{
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.box{
+padding: 1%;
+}
+.box p{
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-top: 2rem;
+}
+/*paragraph*/
+.little-description{
+    font-size: 1.8rem;
+    width: 60%;
+    margin-left: 20%;
+    line-height: 3rem;
+}
+/*...............Header.....................*/
+
+header{
+    background: linear-gradient(rgba(230, 228, 223, 0.1),rgba(230, 228, 223,0.1)), url(img/jeremy-ricketts-6ZnhM-xBpos-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 85vh;
+    position: relative;
+
+}
+.logo{
+    height: 5rem;
+    width: 5rem;
+    margin-top: 2.5rem;
+    float: left;
+}
+.logof{
+float: left;
+margin-top: 4rem;
+font-size: 2.2rem;
+font-weight: 400;
+}
+.logof a{
+text-decoration: none;
+color: rgba(255, 255, 255, 1);
+padding-left: 1rem;
+}
+/*Main Navigation*/
+
+.main-nav{
+    float: right;
+    margin-top: 4rem;
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 1.5rem;
+}
+.main-nav li:first-child{
+    margin-left: 0;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgba(0,0,0,0.2);
+    padding: .6rem 1rem;
+    border-radius: .4rem;
+    display: inline-block;
+    font-size: 1.6rem;
+    transition: .3s;
+}
+
+.main-nav li:hover a:link,
+.main-nav li:hover a:visited{
+    background:rgba(0,0,0, 0.5);
+}
+.active{
+    background:rgba(0,0,0, 0.5);
+    border-radius: .3rem;
+}
+.hero-text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.btn-hero:link,
+.btn-hero:visited{
+   /* background: #2b9ae8;
+    border-color: #072940;*/
+}
+
+
+
+/*...............Services section.....................*/
+
+.size{
+    height: 10rem;
+    width: 11rem;
+}
+.service-section{
+    color: #4d574c;
+    background: rgba(230, 228, 223, 0.2);
+    text-align: center;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+.service-section h2::after{
+    background:rgba(1, 193, 182, 0.9);
+}
+
+.services-icon{
+    margin-top: 4.5rem;
+    margin-bottom: 3.5rem;
+}
+.row p{
+    font-weight: 400;
+}
+
+/*about start*/
+.test {
+    background: #fff;
+}
+.container{
+    width: 80%;
+    margin: 10px auto;
+  }
+  
+  .carousel{
+    /* border: .2rem solid #ccc; */
+    height: 30vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slider{
+    height: 30vh;
+    display: flex;
+    width: 400%;
+    /* border: .2rem solid red; */
+    transition: all 0.3s;
+    flex-shrink: 0;
+  }
+  
+  .slider section{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+  }
+  
+  .controls .arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .arrow.left{
+    left: 1rem;
+    font-size: 3rem;
+  }
+  
+  .arrow.right{
+    right: 1rem;
+    font-size: 3rem;
+  }
+  .test h2{
+    margin-left: 60rem;
+  }
+  
+  /*end*/
+  /*start*/
+.btn-blog:link,
+.btn-blog:visited{
+    font-size: 1.5rem;
+}
+.blog{
+    padding-left: 65rem;
+  }
+.blog h2::after{
+visibility: hidden;
+}
+/*end*/
+/*start*/
+.final{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 400;
+    width: 80%;
+    margin-left: 10%;
+    line-height: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.footer{
+    background: white;
+}
+.footer .all{
+    display:flex;
+    justify-content: space-around;
+    font-size: 2rem;
+}
+
+/*....................................... footer............................. */
+.footer{
+    background-color: #190029;
+    padding: 7rem 0;
+}
+footer .container{
+    max-width: 117rem;
+    
+    margin: auto;
+}
+footer ul{
+    list-style: none;
+}
+footer a{
+    text-decoration: none;
+}
+footer .row{
+    display:flex;
+    flex-wrap: wrap;
+}
+footer .footer-col{
+    width: 25%;
+    padding: 0 1.5rem;
+}
+.footer-col h4{
+    font-size: 1.8rem;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 3.5rem;
+    font-weight:400;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1.2rem;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 5rem;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 1rem;
+}
+.footer-col ul li a{
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    font-weight: 300;
+    color: #bbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li {
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    color:#fff;
+    font-weight: 300;
+    color: #bbb;
+    display: block;
+}
+.footer-col ul li a:hover{
+    color: #fff;
+    padding-left: .8rem;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 4rem;
+    width: 4rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 1rem 1rem 0;
+    text-align: center;
+    line-height: 4rem;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.3s ease;
+    font-size: 1.5rem;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #fff;
+}
+@media(max-width:76.7rem){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 3rem;
+    }
+}
+@media(max-width: 57.4rem){
+    .footer-col{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+}
+
+

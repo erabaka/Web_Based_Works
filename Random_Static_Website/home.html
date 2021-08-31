@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>Zone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- Normalization -->
+    <link rel="stylesheet" href="vendors/css/normalize.css" class="css">
+    <!-- grid -->
+    <link rel="stylesheet" href="vendors/css/grid.css" class="css">
+    <!-- style -->
+    <link rel="stylesheet" href="resources/css/style.css" class="css">
+    <!-- responsive -->
+    <link rel="stylesheet" href="resources/css/responsive.css" class="css">
+    
+</head>
+<body>
+    <!-- Start header -->
+    <header>
+        <nav>
+            <div class="row">
+                <a href="#">
+                    <img src="resources/img/trent-erwin-fKImVjUwkXc-unsplash.jpg" alt="logo" class="logo" >
+                </a>
+                <p class= "logof"><a href="#">ZONE</a></p>
+                <ul class="main-nav">
+                    <li class = "active"><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">work</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="hero-text-box">
+                <h1>Hey! Hope you're doing great!</h1>
+                <a href="#" class ="btn btn-hero">Get Started!</a>
+            </div>
+        </div>
+    </header>
+    <!-- End header -->
+
+    <!-- Start Service Section -->
+    <section class="service-section clearfix">
+        <div class="row">
+            <h2>SERVICES WE PROVIDE</h2>
+            <p class="little-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia ipsa molestiae ullam impedit distinctio nam iure cumque itaque ducimus molestias alias nisi fuga earum neque incidunt eaque a suscipit, iusto!</p>
+        </div>
+        <div class="row">
+            <div class="col span_1_of_4 box">
+                <img src="resources/img/rosie-sun-1L71sPT5XKc-unsplash.jpg" alt="6" class="services-icon size">
+                <h3>Branding</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur at mollitia, odio sed et accusamus </p>
+            </div>
+            <div class="col span_1_of_4 box">
+                <img src="resources/img/rosie-sun-1L71sPT5XKc-unsplash.jpg" alt="7" class="services-icon size">
+                <h3>Branding</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur at mollitia, odio sed et accusamus.</p>
+            </div>
+            <div class="col span_1_of_4 box">
+                <img src="resources/img/rosie-sun-1L71sPT5XKc-unsplash.jpg" alt="8" class="services-icon size">
+                <h3>Branding</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur at mollitia, odio sed et accusamus </p>
+            </div>
+            <div class="col span_1_of_4 box">
+                <img src="resources/img/rosie-sun-1L71sPT5XKc-unsplash.jpg" alt="9" class="services-icon size">
+                <h3>Branding</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur at mollitia, odio sed et accusamus</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Service Section -->
+    <!-- Start -->
+     <section class="test clearfix">
+        <h2>Testimonials</h2>
+        <div class="container">
+            <div class="carousel">
+              <div class="slider">
+                <section><pre>Anika</pre></section>
+                <section>Tabassum</section>
+                <section>Era</section>
+                <section>What</section>
+                </div>
+              <div class="controls">
+                  <span class="arrow left"><i class="fas fa-angle-left"></i></span>
+                  <span class="arrow right"><i class="fas fa-angle-right"></i></span>
+              </div>
+            </div>
+          </div>
+    </section>
+    <!-- End -->
+
+    <!-- start -->
+    <section class="blog clearfix" id = "blog" >
+        <h2>Blog</h2>
+        <a href="{% url 'blog' %}" class ="btn btn-blog">Go to the blog-panel</a>
+
+    </section>
+    <!-- final hook -->
+    <section class="clearfix final">
+        <h3>You don’t get a second chance to build your first impression. It’s your time to position yourself better than your competitors.
+        </h3>
+        <a href="{% url 'popup' %}" class ="btn btn-final">Learn How</a>
+    </section>
+    <!-- end -->
+<!-- start footer -->
+<footer class="footer" id = "footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Phone: +8801xxxxxxxxx</li>
+                        <li>Email: asdfghj@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="{% url 'AC' %}">Get in touch</a></li>
+                        <li>Pretty much all</li>
+                        <li>Uvwxyz</li>
+                        <li>Abcdef</li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Blog</h4>
+                    <ul>
+                        <li>
+                            <a href="{% url 'blog' %}">Check Blogs</a>
+                        </li>
+                    </ul>
+                   
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href=""><i class = 'fab fa-facebook-f'></i></a>
+                        <a href=""><i class = 'fab fa-twitter'></i></a>
+                        <a href=""><i class = 'fab fa-instagram'></i></a>
+                        <a href=""><i class = 'fab fa-linkedin-in'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+<!-- JS -->
+<script src="resources/js/home.js" type="text/javascript" charset="utf-8" async defer></script>
+    <script src="vendors/js/html5shiv.min.js" type="text/javascript" charset="utf-8" async defer></script>
+    <script src="vendors/js/respond.min.js" type="text/javascript" charset="utf-8" async defer></script>
+    <script src="vendors/js/selectivizr.js" type="text/javascript" charset="utf-8" async defer></script>
+
+
+</body>
+</html>
